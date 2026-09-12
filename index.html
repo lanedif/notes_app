@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Action Tracker</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="darkmode.css" id="dark-mode-stylesheet" disabled>
+</head>
+<body>
+  <main>
+    <div class="theme-control">
+      <label class="theme-switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+        <span>Page Theme</span>
+      </label>
+    </div>
+
+    <h1>Action Tracker</h1>
+    <p>Actions found in your files.</p>
+
+    <section id="actions-section" aria-labelledby="actions-heading">
+      <h2 id="actions-heading">Current actions</h2>
+
+      <div id="actions-container">
+        <p>Loading actions...</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

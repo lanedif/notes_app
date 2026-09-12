@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3f4f6;
+  color: #1f2937;
+  font-family: system-ui, sans-serif;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+main {
+  width: min(900px, calc(100% - 32px));
+  margin: 48px auto;
+}
+
+h1 {
+  margin-bottom: 8px;
+  font-size: 2rem;
+}
+
+h2 {
+  margin-top: 36px;
+}
+
+#actions-container {
+  display: grid;
+  gap: 16px;
+}
+
+.action-card {
+  padding: 20px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 5%);
+}
+
+.action-card h3 {
+  margin: 12px 0 8px;
+  font-size: 1.1rem;
+}
+
+.source {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* Added all of below for dark mode switch  */
+.theme-control {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+.theme-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #6b7280;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.theme-switch input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.slider {
+  position: relative;
+  width: 46px;
+  height: 24px;
+  background: #9ca3af;
+  border-radius: 999px;
+  transition: background-color 0.2s;
+}
+
+.slider::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.theme-switch input:checked + .slider {
+  background: #2563eb;
+}
+
+.theme-switch input:checked + .slider::after {
+  transform: translateX(22px);
+}
