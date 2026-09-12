@@ -8,8 +8,6 @@ cd ./note_app
 python3 -m http.server 8000
 ```
 
-
-
 ### Why
 There's probably a ton of CRUD apps that do this (or something like it) right out of the box, but there's so many that "meet the bar", but still aren't exactly what I want and I figured that with the help of AI I can beuild exactly the features I want with relatively little effort and have some fun along the way.
 
