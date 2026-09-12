@@ -1,12 +1,68 @@
-[
-  {
-    "text": "Review the project proposal",
-    "status": "open",
-    "source": "meeting-notes.txt"
-  },
-  {
-    "text": "Send the revised budget",
-    "status": "waiting",
-    "source": "email-summary.txt"
-  }
-]
+{
+  "generated_at": "2026-09-12T12:18:20.967408+00:00",
+  "actions": [
+    {
+      "text": "details",
+      "status": "open",
+      "due": "2026-09-10",
+      "source": "20260910_misc_sept10th.md",
+      "line": 12
+    },
+    {
+      "text": "Chris, follow up with vendors on the AI strategy",
+      "status": "open",
+      "due": "2026-09-17",
+      "source": "20260910_nextsteps_sept10th.md",
+      "line": 25
+    },
+    {
+      "text": "[self] try out this operation in a few files",
+      "status": "open",
+      "due": "20260910",
+      "source": "20260910_misc_sept10th.md",
+      "line": 16
+    },
+    {
+      "text": "me, do some stuff, do it well and follow up later",
+      "status": "open",
+      "due": "",
+      "source": "08_aug/20260801_test_files_aug1st.md",
+      "line": 5
+    },
+    {
+      "text": "details",
+      "status": "open",
+      "due": "",
+      "source": "20260910_misc_sept10th.md",
+      "line": 6
+    },
+    {
+      "text": "[me] [20260912] Create a dark mode slider feature -- Done",
+      "status": "open",
+      "due": "",
+      "source": "20260911_steps_sept11th.md",
+      "line": 6
+    },
+    {
+      "text": "[me] [20260912] Create a dark mode2 slider feature -- Done",
+      "status": "open",
+      "due": "",
+      "source": "20260911_steps_sept11th.md",
+      "line": 7
+    },
+    {
+      "text": "Alex, send revised proposal",
+      "status": "waiting",
+      "due": "",
+      "source": "20260910_nextsteps_sept10th.md",
+      "line": 26
+    },
+    {
+      "text": "Jamie, confirm meeting date",
+      "status": "done",
+      "due": "",
+      "source": "20260910_nextsteps_sept10th.md",
+      "line": 27
+    }
+  ]
+}

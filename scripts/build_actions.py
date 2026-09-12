@@ -3,8 +3,8 @@ from datetime import datetime, timezone
 import json
 import re
 
-NOTES_DIR = Path("notes")
-OUTPUT_FILE = Path("generated/actions.json")
+NOTES_DIR = Path("../notes/")
+OUTPUT_FILE = Path("../data/actions.json")
 
 ACTION_RE = re.compile(
     r"^\s*-\s*action\s*:\s*(?P<text>.+?)\s*$",

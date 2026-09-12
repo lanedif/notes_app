@@ -1,0 +1,12 @@
+[
+  {
+    "text": "Review the project proposal",
+    "status": "open",
+    "source": "meeting-notes.txt"
+  },
+  {
+    "text": "Send the revised budget",
+    "status": "waiting",
+    "source": "email-summary.txt"
+  }
+]
