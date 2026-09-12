@@ -22,7 +22,6 @@ themeToggle.addEventListener("change", () => {
 });
 
 
-// Load the action data
 async function loadActions() {
   const container = document.querySelector("#actions-container");
 
@@ -33,9 +32,10 @@ async function loadActions() {
       throw new Error(`Could not load file: HTTP ${response.status}`);
     }
 
-    const actions = await response.json();
+    const data = await response.json();
+    const actions = data.actions;
 
-    if (actions.length === 0) {
+    if (!Array.isArray(actions) || actions.length === 0) {
       container.innerHTML = "<p>No actions found.</p>";
       return;
     }
@@ -47,7 +47,16 @@ async function loadActions() {
         </span>
 
         <h3>${action.text}</h3>
-        <p class="source">Source: ${action.source}</p>
+
+        ${action.due
+          ? `<p class="due">Due: ${action.due}</p>`
+          : ""
+        }
+
+        <p class="source">
+          Source: ${action.source}
+          ${action.line ? `, line ${action.line}` : ""}
+        </p>
       </article>
     `).join("");
   } catch (error) {
