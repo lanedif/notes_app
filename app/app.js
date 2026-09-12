@@ -27,7 +27,7 @@ async function loadActions() {
   const container = document.querySelector("#actions-container");
 
   try {
-    const response = await fetch("data/actions.json");
+    const response = await fetch("../data/actions.json");
 
     if (!response.ok) {
       throw new Error(`Could not load file: HTTP ${response.status}`);
